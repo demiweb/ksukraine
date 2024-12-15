@@ -1,0 +1,165 @@
+@function vw($px-vw, $base-vw: 1400px) {
+  @return ($px-vw * 100vw) / $base-vw
+}
+
+@media screen and (max-width: 1400px) {
+  .header {
+    &-cont {
+      padding: vw(38px) 0 vw(30px);
+    }
+
+    .container {
+      max-width: vw(1204px);
+      padding: 0 20px;
+    }
+
+    &-text {
+      .ic {
+        width: vw(260px);
+        height: vw(59px);
+        margin-right: vw(374px);
+      }
+    }
+
+    &-img {
+      width: vw(424px);
+
+      &::before {
+        width: vw(29px);
+        height: vw(141px);
+      }
+    }
+  }
+  .btn-cart {
+    width: vw(161px);
+    height: vw(61px);
+    padding: vw(8px) vw(12px);
+
+    p {
+      font-size: vw(20px);
+    }
+
+    .cart-ic {
+      width: vw(37px);
+    }
+  }
+  .main-cont {
+    max-width: 100%;
+  }
+  .book {
+    padding-top: vw(129px);
+
+    &-arrow {
+      width: vw(650px);
+      height: vw(547px);
+      bottom: vw(-146px);
+    }
+
+    .container {
+      max-width: vw(1160px);
+      padding: 0 vw(20px);
+    }
+
+    &-image {
+      width: vw(808px);
+    }
+
+    &-text {
+      max-width: vw(586px);
+
+      span {
+        font-size: vw(30px);
+        margin-bottom: vw(160px);
+        max-width: vw(550px);
+      }
+
+      p {
+        font-size: vw(30px);
+        margin-bottom: vw(70px);
+      }
+    }
+  }
+  .btn {
+    font-size: vw(30px);
+    padding: vw(8px);
+  }
+  .books-list {
+    margin-top: vw(27px);
+    margin-bottom: vw(130px);
+
+    .container {
+      max-width: vw(1240px);
+      padding: 0 vw(20px);
+    }
+
+    &__cont {
+      gap: vw(145px);
+    }
+  }
+  .single-book {
+    //145px
+    width: calc(50% - (10.3571vw / 2));
+
+    .txt {
+      p, span {
+        font-size: vw(26px);
+      }
+    }
+
+    .stars {
+      width: vw(174px);
+      margin-top: vw(32px);
+    }
+
+    .btm {
+      gap: vw(16px);
+      max-width: vw(404px);
+      margin-top: vw(36px);
+
+      .quant {
+        width: vw(90px);
+        height: vw(65px);
+        font-size: vw(30px);
+      }
+    }
+  }
+  .footer {
+    .container {
+      max-width: vw(1192px);
+      padding: 0 vw(20px);
+
+    }
+
+    &-bot {
+      padding: vw(10px) 0 vw(20px);
+
+      p {
+        font-size: vw(14px);
+      }
+    }
+
+    &-top {
+      padding: vw(40px) 0 vw(180px);
+    }
+
+    &-column {
+      gap: vw(26px);
+
+      ul {
+        li {
+          a {
+            font-size: vw(16px);
+          }
+        }
+      }
+
+      span {
+        font-size: vw(22px);
+      }
+
+      .img {
+        width: vw(213px);
+      }
+    }
+  }
+}

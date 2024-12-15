@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <link
+            href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css">
+
+
+</head>
+<body class="body default">
+<div class="header-wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__brand">
+                    <a href="/pl-pl/">
+                        <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                             viewBox="0 0 346 120" xml:space="preserve" enable-background="new 0 0 346 120"><style>.st1 {
+                            fill: #fff
+                        }</style>
+                            <g id="Group-8"><defs><filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="346" height="120"><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"></feColorMatrix></filter></defs>
+                                <mask maskUnits="userSpaceOnUse" x="0" y="0" width="346" height="120" id="mask-2_2_"><g filter="url(#Adobe_OpacityMaskFilter)"><path id="path-1_2_" class="st1" d="M0 0h346v120H0V0z"></path></g></mask>
+                                <path id="Fill-5" d="M49.5 0L0 120h296.6L346 0H49.5z" mask="url(#mask-2_2_)"
+                                      fill="#173b7a"></path>
+                                <defs><filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="45.4" y="21.2" width="249.2" height="76.7"><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"></feColorMatrix></filter></defs>
+                                <mask maskUnits="userSpaceOnUse" x="45.4" y="21.2" width="249.2" height="76.7"
+                                      id="Fill-7_1_"><g filter="url(#Adobe_OpacityMaskFilter_1_)"><path class="st1" d="M0 0h346v120H0V0z"></path></g></mask>
+                                <path id="Fill-7"
+                                      d="M293.4 44.7c6.5-20.1-15.8-23.5-34.6-23.5-26.5 0-45.3 6-53.1 25.2-.9 2.2-1.4 4.2-1.6 6h-23.4L192.4 24H181l-11.6 28.4h-49.1L166.8 24h-37.4L91.9 48.8 102 24H74.4l-29 70.9H73l7.5-18.3 14-8.5 9.1 26.8h34.2l-13.5-32.5h41.1L152 94.9h11.3l13.3-32.5h32.5c3 1.8 7.4 3.1 13 3.8l23.4 3c6.5.8 8.8 1.8 7.3 5.6-2.1 5.1-9 6.3-15.2 6.3-6 0-9.5-.8-11.4-2.2-1.9-1.3-2.2-3.4-1.5-6h-32.1c-8 21.4 17.1 25 36.6 25 29.3 0 48.4-7.8 55.1-24.6 5.6-13.9-1.4-19.7-19.6-21.8l-22.8-2.6c-6.7-.8-7.8-2.7-6.9-5 1.9-4.8 7.4-6.7 15.3-6.7 3.5 0 7 .4 9.3 1.6 2.3 1 3.5 3 2.5 6h31.3v-.1z"
+                                      mask="url(#Fill-7_1_)" fill="#fefefe"></path></g></svg>
+                    </a>
+                </div>
+
+                <nav class="mainnav">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="">Про К+С Україна</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="">Сільське господарство</a>
+                                <ul>
+                                    <li class="current-menu-item"><a href="">Добрива</a></li>
+                                    <li><a href="">Кампанія</a></li>
+                                    <li><a href="">Академія KALI</a></li>
+                                    <li><a href="">Консультації</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children current-menu-item">
+                                <a href="">Промисловість</a>
+                                <ul>
+                                    <li><a href="">Харчування тварин</a></li>
+                                    <li><a href="">Харчова сіль</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="">Контакти</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="mainnav-secondary visible-xsmall-medium">
+                        <a href="" class="subnav__list-item">Про К+С Україна</a>
+                        <a href="" class="subnav__list-item">Сільське господарство</a>
+                        <a href="" class="subnav__list-item">Промисловість</a>
+                        <a href="" class="subnav__list-item">Контакти</a>
+                    </div>
+                </nav>
+
+
+                <div class="header__meta">
+
+                    <div class="header__lang">
+                        <a href="" class="header__lang-link is-active">UA</a>
+                        <a href="" class="header__lang-link">EN</a>
+                    </div>
+
+                    <span role="button" class="header__icon-link mainnav-toggle" title="Menu" data-toggle="">
+                        <i class="icon icon-burger" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-menu">
+            <div class="hidden-menu__wrap">
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Про К+С Україна</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="">Сільське господарство</a>
+                            <ul>
+                                <li class="current-menu-item"><a href="">Добрива</a></li>
+                                <li><a href="">Кампанія</a></li>
+                                <li><a href="">Академія KALI</a></li>
+                                <li><a href="">Консультації</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="">Промисловість</a>
+                            <ul>
+                                <li><a href="">Харчування тварин</a></li>
+                                <li><a href="">Харчова сіль</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="add-menu">
+                    <ul>
+                        <li><a href="">Контакт</a></li>
+                        <li><a href="">Правила</a></li>
+                        <li><a href="">Конфіденціальність</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="menu-items-sides" style="display: none;">
+        <div class="menu-part" data-menu="0">
+            <div class="menu-part__left">
+                <div class="img">
+                    <img src="./img/menu-img.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <p>K+S supports farmers in securing the world's food supply, provides raw materials and solutions to
+                        keep industries running, brings taste to the plate and ensures safety in winter. Learn more
+                        about us.</p>
+                </div>
+            </div>
+            <div class="menu-part__menu">
+
+            </div>
+        </div>
+        <div class="menu-part" data-menu="1">
+            <div class="menu-part__left">
+                <div class="img">
+                    <img src="./img/prod1.png" alt="">
+                </div>
+                <div class="txt">
+                    <p>K+S supports farmers in securing the world's food supply, provides raw materials and solutions to
+                        keep industries running.</p>
+                </div>
+            </div>
+            <div class="menu-part__menu">
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="subnav " aria-hidden="false" data-subnav="" style="display: block">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3 subnav__level subnav__level--1st" data-navlevel="1">
+                    <div class="visible-medium-up">
+                        <img class="subnav__image" src="">
+                        <div class="subnav__text" data-bind="text"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-4 subnav__level subnav__level--2nd" data-navlevel="2">
+                    <div class="subnav__list" data-navlist="items" style="height: 0"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="backdrop" data-backdrop=""></div>
+</div>
+<div class="page-wrapper">
+    <main class="page">
+
+
+        <section id="hero-page-section" class="page__section" data-section="hero">
+            <div id="hero" class="hero-wrapper">
+                <div class="hero">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="hero-slide has-gradient">
+                                    <picture class="hero-slide__picture">
+                                        <source media="(max-width: 991px)"
+                                                srcset="./img/hero-mob.jpg">
+                                        <source media="(min-width: 992px)"
+                                                srcset="./img/hero-img.jpg">
+                                        <img src="./img/hero-img.jpg"
+                                             alt="">
+                                    </picture>
+                                    <div class="hero-slide__inner">
+                                        <div class="hero-slide__body">
+
+                                            <div class="overline ">
+                                                K+S
+                                            </div>
+                                            <h1 class="hero-slide__headline">Ми збагачуємо життя для поколінь</h1>
+                                            <a href="" class="button button--primary"><i
+                                                    class="icon icon-arrow-right"></i><span>Докладніше про нас</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-swiper-scrollbar class="swiper-scrollbar is-hidden"></div>
+                        <div class="hero__parallelogram">
+                            <div data-swiper-button="prev" class="hero-button hero-button-prev is-hidden"></div>
+                            <div data-swiper-button="next" class="hero-button hero-button-next is-hidden"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro-page-section" class="page__section page__section--intro" data-section="intro">
+
+            <div id="intro" class="section-comp-wrapper">
+                <div class="intro  ">
+                    <div class="intro__container">
+
+                        <div class="intro__text">
+                            <p>Ми робимо важливий внесок у суспільство: ми дозволяємо фермерам забезпечити світове
+                                постачання продовольства. Наші продукти забезпечують роботу багатьох галузей
+                                промисловості. Ми збагачуємо повсякденне життя споживачів і забезпечуємо безпеку взимку.
+                                Маючи близько 11 000 співробітників, виробничі майданчики на двох континентах і
+                                глобальну дистриб’юторську мережу, ми є надійним партнером для наших клієнтів.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="overview-page-section" class="page__section" data-section="overview">
+            <div id="overview" class="section-comp-wrapper">
+                <div class="overview-teaser  has-right-aligned-content">
+                    <picture class="overview-teaser__picture">
+                        <source media="(max-width: 991px)"
+                                data-srcset="./img/fst11.jpg">
+                        <source media="(min-width: 992px)"
+                                data-srcset="./img/fst1.jpg">
+                        <img data-src="./img/fst1.jpg"
+                             src="./img/fst1.jpg"
+                             class="blur-up lazyload" alt="">
+                    </picture>
+                    <div class="overview-teaser__wrapper">
+                        <div class="overview-teaser__body">
+                            <h2 class="overview-teaser__title h3">Грунтові, позакореневі та фертигаційні добрива</h2>
+                            <p class="overview-teaser__intro">K+S Україна пропонує широкий асортимент ґрунтових, рідких
+                                і позакореневих добрив. Більшість наших продуктів дозволено для використання в
+                                органічному землеробстві.</p>
+                            <div class="overview-teaser__actions">
+                                <a href="" class="button button--primary">
+                                    <i class="icon icon-arrow-right"></i>
+                                    <span class="button__label">Більше про нас</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-teaser  ">
+                    <picture class="overview-teaser__picture">
+                        <source media="(max-width: 991px)"
+                                data-srcset="./img/fst21.jpg">
+                        <source media="(min-width: 992px)"
+                                data-srcset="./img/fst2.jpg">
+                        <img data-src="./img/fst2.jpg"
+                             src="./img/fst2.jpg"
+                             class="blur-up lazyload" alt="">
+                    </picture>
+                    <div class="overview-teaser__wrapper">
+                        <div class="overview-teaser__body">
+                            <h2 class="overview-teaser__title h3">База знань з живлення рослин</h2>
+                            <p class="overview-teaser__intro">KALI Academy — це база знань, у якій ми, як експерти в
+                                галузі живлення рослин, пропонуємо зацікавленим фермерам, продавцям, консультантам,
+                                учням і студентам цінну інформацію та практичні поради, зібрані в одному місці.</p>
+                            <div class="overview-teaser__actions">
+                                <a href="" class="button button--primary">
+                                    <i class="icon icon-arrow-right"></i>
+                                    <span class="button__label">В Академію KALI</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-teaser  has-right-aligned-content">
+                    <picture class="overview-teaser__picture">
+                        <source media="(max-width: 991px)"
+                                data-srcset="./img/fst31.jpg">
+                        <source media="(min-width: 992px)"
+                                data-srcset="./img/fst3.jpg">
+                        <img data-src="./img/fst3.jpg"
+                             src="./img/fst3.jpg"
+                             class="blur-up lazyload" alt="">
+                    </picture>
+                    <div class="overview-teaser__wrapper">
+                        <div class="overview-teaser__body">
+                            <h2 class="overview-teaser__title h3">Промисловість</h2>
+                            <p class="overview-teaser__intro">Ми пропонуємо продукти з калію, магнію та солі різного
+                                класу чистоти та гранулювання – все з одного джерела.</p>
+                            <div class="overview-teaser__actions">
+                                <a href="" class="button button--primary">
+                                    <i class="icon icon-arrow-right"></i>
+                                    <span class="button__label">До промисловості</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</div>
+
+<footer class="footer" >
+    <div class="footer__wrapper">
+        <img class="footer__logo"
+             src="./img/ks_logo.svg" alt="Logo">
+        <div class="footer__content">
+            <div class="footer__body">
+                <nav class="footer__links">
+                    <div class="footer__title">Сільське господарство</div>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Добрива</a>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Кампанія</a>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Академія KALI</a>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Консультації</a>
+
+                </nav>
+                <nav class="footer__links">
+                    <div class="footer__title">Промисловість</div>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Харчування тварин</a>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Харчова сіль</a>
+
+
+                </nav>
+                <nav class="footer__links">
+                    <div class="footer__title">K+S Україна</div>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Про нас</a>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Контакти</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="footer__footer">
+        <div class="container">
+            <div class="footer__meta">
+                <nav class="footer__links footer__links--horizontal">
+                    <span class="footer__link footer__link--dark">© 2025 K+S Україна. Всі права захищені.</span>
+                    <a class="footer__link footer__link--dark" href="">Захист даних</a>
+                    <div class="footer__link footer__link--dark"><a class="cmp_preferences">Параметри файлів cookie</a>
+                    </div>
+
+                </nav>
+            </div>
+
+            <div class="footer__social">
+                <nav class="footer__links footer__links--horizontal footer__links--right">
+                    <a class="follow-list__item follow-list__item--small" href="">
+                        <img class="follow-icon"
+                             src="./img/facebook.svg"
+                             alt="">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script class="main-script" src="./js/scripts.min.js"></script>
+</body>
+</html>

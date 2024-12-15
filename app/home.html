@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <link
+            href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css">
+
+
+</head>
+<body class="body default">
+//= details/header.html
+<div class="page-wrapper">
+    <main class="page">
+
+
+        <section id="hero-page-section" class="page__section" data-section="hero">
+            <div id="hero" class="hero-wrapper">
+                <div class="hero">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="hero-slide has-gradient">
+                                    <picture class="hero-slide__picture">
+                                        <source media="(max-width: 991px)"
+                                                srcset="./img/hero-mob.jpg">
+                                        <source media="(min-width: 992px)"
+                                                srcset="./img/hero-img.jpg">
+                                        <img src="./img/hero-img.jpg"
+                                             alt="">
+                                    </picture>
+                                    <div class="hero-slide__inner">
+                                        <div class="hero-slide__body">
+
+                                            <div class="overline ">
+                                                K+S
+                                            </div>
+                                            <h1 class="hero-slide__headline">Ми збагачуємо життя для поколінь</h1>
+                                            <a href="" class="button button--primary"><i
+                                                    class="icon icon-arrow-right"></i><span>Докладніше про нас</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-swiper-scrollbar class="swiper-scrollbar is-hidden"></div>
+                        <div class="hero__parallelogram">
+                            <div data-swiper-button="prev" class="hero-button hero-button-prev is-hidden"></div>
+                            <div data-swiper-button="next" class="hero-button hero-button-next is-hidden"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro-page-section" class="page__section page__section--intro" data-section="intro">
+
+            <div id="intro" class="section-comp-wrapper">
+                <div class="intro  ">
+                    <div class="intro__container">
+
+                        <div class="intro__text">
+                            <p>Ми робимо важливий внесок у суспільство: ми дозволяємо фермерам забезпечити світове
+                                постачання продовольства. Наші продукти забезпечують роботу багатьох галузей
+                                промисловості. Ми збагачуємо повсякденне життя споживачів і забезпечуємо безпеку взимку.
+                                Маючи близько 11 000 співробітників, виробничі майданчики на двох континентах і
+                                глобальну дистриб’юторську мережу, ми є надійним партнером для наших клієнтів.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="overview-page-section" class="page__section" data-section="overview">
+            <div id="overview" class="section-comp-wrapper">
+                <div class="overview-teaser  has-right-aligned-content">
+                    <picture class="overview-teaser__picture">
+                        <source media="(max-width: 991px)"
+                                data-srcset="./img/fst11.jpg">
+                        <source media="(min-width: 992px)"
+                                data-srcset="./img/fst1.jpg">
+                        <img data-src="./img/fst1.jpg"
+                             src="./img/fst1.jpg"
+                             class="blur-up lazyload" alt="">
+                    </picture>
+                    <div class="overview-teaser__wrapper">
+                        <div class="overview-teaser__body">
+                            <h2 class="overview-teaser__title h3">Грунтові, позакореневі та фертигаційні добрива</h2>
+                            <p class="overview-teaser__intro">K+S Україна пропонує широкий асортимент ґрунтових, рідких
+                                і позакореневих добрив. Більшість наших продуктів дозволено для використання в
+                                органічному землеробстві.</p>
+                            <div class="overview-teaser__actions">
+                                <a href="" class="button button--primary">
+                                    <i class="icon icon-arrow-right"></i>
+                                    <span class="button__label">Більше про нас</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-teaser  ">
+                    <picture class="overview-teaser__picture">
+                        <source media="(max-width: 991px)"
+                                data-srcset="./img/fst21.jpg">
+                        <source media="(min-width: 992px)"
+                                data-srcset="./img/fst2.jpg">
+                        <img data-src="./img/fst2.jpg"
+                             src="./img/fst2.jpg"
+                             class="blur-up lazyload" alt="">
+                    </picture>
+                    <div class="overview-teaser__wrapper">
+                        <div class="overview-teaser__body">
+                            <h2 class="overview-teaser__title h3">База знань з живлення рослин</h2>
+                            <p class="overview-teaser__intro">KALI Academy — це база знань, у якій ми, як експерти в
+                                галузі живлення рослин, пропонуємо зацікавленим фермерам, продавцям, консультантам,
+                                учням і студентам цінну інформацію та практичні поради, зібрані в одному місці.</p>
+                            <div class="overview-teaser__actions">
+                                <a href="" class="button button--primary">
+                                    <i class="icon icon-arrow-right"></i>
+                                    <span class="button__label">В Академію KALI</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-teaser  has-right-aligned-content">
+                    <picture class="overview-teaser__picture">
+                        <source media="(max-width: 991px)"
+                                data-srcset="./img/fst31.jpg">
+                        <source media="(min-width: 992px)"
+                                data-srcset="./img/fst3.jpg">
+                        <img data-src="./img/fst3.jpg"
+                             src="./img/fst3.jpg"
+                             class="blur-up lazyload" alt="">
+                    </picture>
+                    <div class="overview-teaser__wrapper">
+                        <div class="overview-teaser__body">
+                            <h2 class="overview-teaser__title h3">Промисловість</h2>
+                            <p class="overview-teaser__intro">Ми пропонуємо продукти з калію, магнію та солі різного
+                                класу чистоти та гранулювання – все з одного джерела.</p>
+                            <div class="overview-teaser__actions">
+                                <a href="" class="button button--primary">
+                                    <i class="icon icon-arrow-right"></i>
+                                    <span class="button__label">До промисловості</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</div>
+
+//= details/footer.html
+//= details/scripts.html
+</body>
+</html>

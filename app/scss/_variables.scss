@@ -1,0 +1,134 @@
+@function vw($px-vw, $base-vw: 1400px) {
+  @return ($px-vw * 100vw) / $base-vw
+}
+
+$main-font: "Open Sans Hebrew", system-ui;
+$second-font: "Open Sans", sans-serif;
+
+
+$main-color: #565CC9;
+$bg: #11144F;
+$green: #87B500;
+$red: #A72D23;
+$text: #666666;
+$pink: #FEA4D5;
+$blue: #2FDADF;
+$hero: #D6D0B3;
+$darkblue: #00468b;
+$blueop: rgba(175, 215, 255, 0.5);
+$blackgreen: #2F6122;
+$lightgreen: #A9CF45;
+$grey: #717171;
+$border: #B18BFF;
+$white: #fff;
+$black: #111111;
+$size: 23px;
+
+@mixin overFlow {
+  overflow: hidden;
+  backface-visibility: hidden;
+  appearance: none;
+}
+
+@mixin flexStart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexCenterH {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@mixin flexCenterV {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin rtl-margin($property, $ltrproperty, $value, $value2) {
+  margin-#{$property}: $value;
+  margin-#{$ltrproperty}: $value2;
+
+  [dir=rtl] & {
+    margin-#{$ltrproperty}: $value;
+    margin-#{$property}: $value2;
+  }
+}
+
+@mixin rtl-padding($property, $ltrproperty, $value, $value2) {
+  padding-#{$property}: $value;
+  padding-#{$ltrproperty}: $value2;
+
+  [dir=rtl] & {
+    padding-#{$ltrproperty}: $value;
+    padding-#{$property}: $value2;
+  }
+}
+
+@mixin textAlign($property, $property2) {
+  text-align: $property;
+
+  [dir=rtl] & {
+    text-align: $property2;
+  }
+}
+
+//fonts
+
+@mixin defaultFont {
+  font-style: normal;
+  font-weight: normal;
+  font-size: vw($size);
+  line-height: 1.43;
+  color: $main-color;
+}
+
+@mixin textFont {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.43;
+  color: $text;
+  letter-spacing: 0.03em;
+}
+
+@mixin title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+  strong {
+    font-weight: inherit;
+    color: $main-color;
+  }
+
+}
+
+@mixin subtitle {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.08;
+  color: $black;
+}
+
+
+//done px
+
+
+.modal-window {
+  display: none;
+}

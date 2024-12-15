@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <link
+            href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css">
+
+
+</head>
+<body class="body default">
+<div class="header-wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__brand">
+                    <a href="/pl-pl/">
+                        <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                             viewBox="0 0 346 120" xml:space="preserve" enable-background="new 0 0 346 120"><style>.st1 {
+                            fill: #fff
+                        }</style>
+                            <g id="Group-8"><defs><filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="346" height="120"><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"></feColorMatrix></filter></defs>
+                                <mask maskUnits="userSpaceOnUse" x="0" y="0" width="346" height="120" id="mask-2_2_"><g filter="url(#Adobe_OpacityMaskFilter)"><path id="path-1_2_" class="st1" d="M0 0h346v120H0V0z"></path></g></mask>
+                                <path id="Fill-5" d="M49.5 0L0 120h296.6L346 0H49.5z" mask="url(#mask-2_2_)"
+                                      fill="#173b7a"></path>
+                                <defs><filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="45.4" y="21.2" width="249.2" height="76.7"><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"></feColorMatrix></filter></defs>
+                                <mask maskUnits="userSpaceOnUse" x="45.4" y="21.2" width="249.2" height="76.7"
+                                      id="Fill-7_1_"><g filter="url(#Adobe_OpacityMaskFilter_1_)"><path class="st1" d="M0 0h346v120H0V0z"></path></g></mask>
+                                <path id="Fill-7"
+                                      d="M293.4 44.7c6.5-20.1-15.8-23.5-34.6-23.5-26.5 0-45.3 6-53.1 25.2-.9 2.2-1.4 4.2-1.6 6h-23.4L192.4 24H181l-11.6 28.4h-49.1L166.8 24h-37.4L91.9 48.8 102 24H74.4l-29 70.9H73l7.5-18.3 14-8.5 9.1 26.8h34.2l-13.5-32.5h41.1L152 94.9h11.3l13.3-32.5h32.5c3 1.8 7.4 3.1 13 3.8l23.4 3c6.5.8 8.8 1.8 7.3 5.6-2.1 5.1-9 6.3-15.2 6.3-6 0-9.5-.8-11.4-2.2-1.9-1.3-2.2-3.4-1.5-6h-32.1c-8 21.4 17.1 25 36.6 25 29.3 0 48.4-7.8 55.1-24.6 5.6-13.9-1.4-19.7-19.6-21.8l-22.8-2.6c-6.7-.8-7.8-2.7-6.9-5 1.9-4.8 7.4-6.7 15.3-6.7 3.5 0 7 .4 9.3 1.6 2.3 1 3.5 3 2.5 6h31.3v-.1z"
+                                      mask="url(#Fill-7_1_)" fill="#fefefe"></path></g></svg>
+                    </a>
+                </div>
+
+                <nav class="mainnav">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="">Про К+С Україна</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="">Сільське господарство</a>
+                                <ul>
+                                    <li class="current-menu-item"><a href="">Добрива</a></li>
+                                    <li><a href="">Кампанія</a></li>
+                                    <li><a href="">Академія KALI</a></li>
+                                    <li><a href="">Консультації</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children current-menu-item">
+                                <a href="">Промисловість</a>
+                                <ul>
+                                    <li><a href="">Харчування тварин</a></li>
+                                    <li><a href="">Харчова сіль</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="">Контакти</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="mainnav-secondary visible-xsmall-medium">
+                        <a href="" class="subnav__list-item">Про К+С Україна</a>
+                        <a href="" class="subnav__list-item">Сільське господарство</a>
+                        <a href="" class="subnav__list-item">Промисловість</a>
+                        <a href="" class="subnav__list-item">Контакти</a>
+                    </div>
+                </nav>
+
+
+                <div class="header__meta">
+
+                    <div class="header__lang">
+                        <a href="" class="header__lang-link is-active">UA</a>
+                        <a href="" class="header__lang-link">EN</a>
+                    </div>
+
+                    <span role="button" class="header__icon-link mainnav-toggle" title="Menu" data-toggle="">
+                        <i class="icon icon-burger" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-menu">
+            <div class="hidden-menu__wrap">
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Про К+С Україна</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="">Сільське господарство</a>
+                            <ul>
+                                <li class="current-menu-item"><a href="">Добрива</a></li>
+                                <li><a href="">Кампанія</a></li>
+                                <li><a href="">Академія KALI</a></li>
+                                <li><a href="">Консультації</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="">Промисловість</a>
+                            <ul>
+                                <li><a href="">Харчування тварин</a></li>
+                                <li><a href="">Харчова сіль</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="add-menu">
+                    <ul>
+                        <li><a href="">Контакт</a></li>
+                        <li><a href="">Правила</a></li>
+                        <li><a href="">Конфіденціальність</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="menu-items-sides" style="display: none;">
+        <div class="menu-part" data-menu="0">
+            <div class="menu-part__left">
+                <div class="img">
+                    <img src="./img/menu-img.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <p>K+S supports farmers in securing the world's food supply, provides raw materials and solutions to
+                        keep industries running, brings taste to the plate and ensures safety in winter. Learn more
+                        about us.</p>
+                </div>
+            </div>
+            <div class="menu-part__menu">
+
+            </div>
+        </div>
+        <div class="menu-part" data-menu="1">
+            <div class="menu-part__left">
+                <div class="img">
+                    <img src="./img/prod1.png" alt="">
+                </div>
+                <div class="txt">
+                    <p>K+S supports farmers in securing the world's food supply, provides raw materials and solutions to
+                        keep industries running.</p>
+                </div>
+            </div>
+            <div class="menu-part__menu">
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="subnav " aria-hidden="false" data-subnav="" style="display: block">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3 subnav__level subnav__level--1st" data-navlevel="1">
+                    <div class="visible-medium-up">
+                        <img class="subnav__image" src="">
+                        <div class="subnav__text" data-bind="text"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-4 subnav__level subnav__level--2nd" data-navlevel="2">
+                    <div class="subnav__list" data-navlist="items" style="height: 0"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="backdrop" data-backdrop=""></div>
+</div>
+<div class="page-wrapper">
+    <main class="page">
+
+
+        <section id="hero-page-section" class="page__section page-product">
+            <nav aria-label="breadcrumb" class="breadcrumb">
+                <ol>
+
+                    <li class="breadcrumb__item">
+                        <a href="">K+S Україна</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="">Продукти</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <span>Korn-KALI</span>
+                    </li>
+                </ol>
+            </nav>
+
+            <div class="product-intro-wrapper">
+                <div class="product-intro">
+                    <div class="product-intro__body">
+                        <div class="product-intro__wrapper">
+                            <div class="product-intro__logo">
+                                <img src="./img/prd2.svg" class="blur-up lazyload" alt="">
+                            </div>
+                            <h1 class="product-intro__name">Korn-KALI</h1>
+                            <div class="product-intro__subline">Основа стабільно високої врожайності. Калій, магній
+                                та сірка.
+                            </div>
+                        </div>
+                        <div class="product-intro__wrapper">
+                            <div class="product-intro__subsegment">
+                                <i class="icon icon-subsegment-kalisoil" style="color: #cd1013;"></i>
+                                <i class="icon icon-subsegment-kalisolu" style="color: #cd1013; display: none;"></i>
+                                <i class="icon icon-subsegment-kalitech" style="color: #cd1013; display: none;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-summary-wrapper">
+                <div class="product-summary">
+                    <div class="product-summary__body">
+                        <div class="product-summary__figure">
+                            <div class="product-summary__slider">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="im">
+                                                <img src="./img/product1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="im">
+                                                <img src="./img/product2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="im">
+                                                <img src="./img/product3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div data-swiper-button="prev"
+                                             class="product-summary-button product-summary-button-prev swiper-button-disabled"></div>
+                                        <div data-swiper-button="next"
+                                             class="product-summary-button product-summary-button-next"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-summary__content">
+                            <div class="product-summary__wrapper">
+                                <div class="product-summary__items">
+                                    <div class="product-summary__item">
+                                        <div class="product-summary__ecological">
+                                            <img src="./img/orga1.png" alt="">
+                                            <span>Сертифіковано для органічного землеробства</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-summary__item">
+                                <div class="nutrients">
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount">40% <span>K<sub>2</sub>O</span></div>
+                                        <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type-description">
+                                                = <span class="no-wrap">33.2% </span>K<sub>2</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount">40% <span>K<sub>2</sub>O</span></div>
+                                        <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type-description">
+                                                = <span class="no-wrap">33.2% </span>K<sub>2</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount">40% <span>K<sub>2</sub>O</span></div>
+                                        <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type-description">
+                                                = <span class="no-wrap">33.2% </span>K<sub>2</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount">40% <span>K<sub>2</sub>O</span></div>
+                                        <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type-description">
+                                                = <span class="no-wrap">33.2% </span>K<sub>2</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-summary__footer">
+                                <a href="#techsspecs" class="button button--icon-left scroll-to">
+                                    <i class="icon icon-pdf"></i>
+                                    <span>Технічні характеристики продукту</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="page__section product__bottom">
+            <div class="section-comp-wrapper">
+                <div class="comp-wrap-txt">
+
+                    <div class="comp-left-wrapper">
+                        <div class="accordion is-large">
+                            <div class="accordion__item">
+                                <div class="accordion__toggle">
+                                    <i class="icon icon-chevron-down"></i>
+                                    <span class="accordion__title">Інформація про товар</span>
+                                </div>
+                                <div class="accordion__body">
+                                    <div class="accordion__content">
+                                        <p>Korn – Kali – ідеальне калійне добриво з магнієм та сіркою, яке забезпечує
+                                            рослину необхідними елементами. Всі поживні елементи знаходяться у повністю
+                                            водорозчинній та миттєво доступній для рослин формі, незалежно від рН
+                                            ґрунту.
+                                            Korn-Kali – можливість передпосівного внесення або з посівомза рахунок
+                                            низького
+                                            сольового індексу та низького вмісту хлору.</p>
+                                        <ul>
+                                            <li>Korn – Kali – це суміш хлористого калію із запатентованим природнім
+                                                сульфатом
+                                                магнію ESTAKiserite, на відміну від аналогів - які являють собою суміш
+                                                сульфату
+                                                кальцію з магнезитом і хлористим калієм, де елементи не є повністю
+                                                розчинними.
+                                            </li>
+                                            <li>Повністю водорозчинне добриво, виготовлене з власної сировини з шахт у
+                                                Німеччині.
+                                            </li>
+                                            <li>Усі елементи в доступній формі та в агрономічно-обгрунтованим
+                                                співвідношенням.
+                                            </li>
+                                            <li>Не містить соляної кислоти, тому не має негативного впливу на рослину та
+                                                максимальноефективний на всіх ґрунтах не залежно від їх pH.
+                                            </li>
+                                            <li>Korn – Kali містить ESTA Kiserite, добриво яке в процесі розчинення
+                                                вступає
+                                                в
+                                                дію з сполукамифосфору в добривах та ґрунту . При цьому утворюється
+                                                сполука,
+                                                яка
+                                                покращує доступність фосфору та засвоєння його рослиною, подовжує його
+                                                дію і
+                                                збільшує врожайність!
+                                            </li>
+                                            <li>Практично однаковий розмір та вага гранул забезпечують рівномірність їх
+                                                внесення
+                                                як розкиднимспособом, так і при внесенні в ряд.
+                                            </li>
+                                        </ul>
+                                        <h3>МІНЕРАЛЬНЕ ДОБРИВО, Хлористий калій з магнієм 40 (+6+4+12,5)</h3>
+                                        <p><strong>40% K 2 O</strong> калій оксид, розчинний у воді</p>
+                                        <p><strong>6% MgO,</strong> оксид магнію, розчинний у воді</p>
+                                        <p><strong>4% Na 2 O</strong> оксид натрію, розчинний у воді</p>
+                                        <p><strong>13% SO 3  </strong> триоксид сірки, розчинний у воді (= 5,2 % S)</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="accordion__toggle">
+                                    <i class="icon icon-chevron-down"></i>
+                                    <span class="accordion__title">Рекомендоване використання</span>
+                                </div>
+                                <div class="accordion__body">
+                                    <div class="accordion__content">
+                                        <p>Наші паспорти безпеки відповідають Європейському регламенту. Ми надаємо ці
+                                            документи
+                                            кількома мовами, щоб запезпечити безпечне поводження з нашими K+S добривами.
+                                            Будь
+                                            ласка, запитуйте їх безпосередньо у вашої контактної особи.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="accordion__toggle">
+                                    <i class="icon icon-chevron-down"></i>
+                                    <span class="accordion__title">Придатність для органічного землеробства</span>
+                                </div>
+                                <div class="accordion__body">
+                                    <div class="accordion__content">
+                                        <p>Наші паспорти безпеки відповідають Європейському регламенту. Ми надаємо ці
+                                            документи
+                                            кількома мовами, щоб запезпечити безпечне поводження з нашими K+S добривами.
+                                            Будь
+                                            ласка, запитуйте їх безпосередньо у вашої контактної особи.</p>
+                                        <p>Наші паспорти безпеки відповідають Європейському регламенту. Ми надаємо ці
+                                            документи
+                                            кількома мовами, щоб запезпечити безпечне поводження з нашими K+S добривами.
+                                            Будь
+                                            ласка, запитуйте їх безпосередньо у вашої контактної особи.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="comp-right-wrapper">
+                        <a href="" class="block-linkitem">
+                            <div class="block-linkitem__type linktype-pdf"></div>
+                            <div class="block-linkitem__content">
+                                <div class="block-linkitem__title">K+S Minerals and Agriculture GmbH - Загальні
+                                    положення та умови Експорт
+                                </div>
+                                <div class="block-linkitem__meta">PDF, 176 КБ</div>
+                            </div>
+                            <div class="block-linkitem__icon"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page__section techspecs" id="techsspecs">
+            <div class="section-comp-wrapper">
+                <div class="section-entry   is-center-aligned">
+                    <h2 class="section-entry__headline">Всі технічні характеристики продукту</h2>
+                </div>
+            </div>
+            <div class="technical-passports">
+                <div class="section-comp-wrapper">
+                    <div class="technical-passports__list">
+                        <div class="technical-passports__download">
+                            <div class="fig">
+                                <i class="listitem-download__icon icon icon-file-certificate"></i>
+                            </div>
+                            <div class="txt">
+                                <span>Технічний паспорт</span>
+                                <p>Korn-KALI</p>
+                            </div>
+                            <a href="" class="button button--link">
+                                <i class="icon icon-download"></i>
+                                <span>Завантажити</span>
+                            </a>
+
+                        </div>
+                        <div class="technical-passports__download">
+                            <div class="fig">
+                                <i class="listitem-download__icon icon icon-file-certificate"></i>
+                            </div>
+                            <div class="txt">
+                                <span>Дані декларації</span>
+                                <p>Korn-KALI</p>
+                            </div>
+                            <a href="" class="button button--link">
+                                <i class="icon icon-download"></i>
+                                <span>Завантажити</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page__section related-prod">
+            <div class="section-comp-wrapper">
+                <div class="section-entry   is-center-aligned">
+                    <h2 class="section-entry__headline">Супутні товари</h2>
+                </div>
+                <div class="products-list">
+                    <div data-colcount="3" class="listitems">
+                        <a href="" class="listitem-product listitem-product--agriculture">
+                            <div class="listitem-product__ecological">
+                                <img src="./img/orga1.png" alt="">
+                            </div>
+                            <div class="listitem-product__head">
+                                <div class="listitem-product__name">
+                                    <img src="./img/prd1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="listitem-product__body">
+                                <div class="listitem-product__addon">
+                                    KALISOP® FINE MAX 0.5 CL
+                                </div>
+                                <div class="listitem-product__copy">
+                                    KALISOP® FINE max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                    низьким вмістом хлориду
+                                </div>
+                                <div class="listitem-product__nutrients nutrients are-small">
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount"></div>
+                                        <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type">
+                                                K<sub>2</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount"></div>
+                                        <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type">
+                                                SO<sub>3</sub>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount"></div>
+                                        <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type">
+                                                M<sub>g</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount"></div>
+                                        <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type">
+                                                Na<sub>2</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="listitem-product listitem-product--agriculture">
+                            <div class="listitem-product__ecological">
+                                <img src="./img/orga1.png" alt="">
+                            </div>
+                            <div class="listitem-product__head">
+                                <div class="listitem-product__name">
+                                    <img src="./img/prd2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="listitem-product__body">
+                                <div class="listitem-product__addon">
+                                    KALIMOP® fine
+                                </div>
+                                <div class="listitem-product__copy">
+                                    KALIMOP® fine max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                    низьким вмістом хлориду
+                                </div>
+                                <div class="listitem-product__nutrients nutrients are-small">
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount"></div>
+                                        <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type">
+                                                K<sub>2</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount"></div>
+                                        <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type">
+                                                SO<sub>3</sub>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount"></div>
+                                        <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type">
+                                                M<sub>g</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount"></div>
+                                        <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type">
+                                                Na<sub>2</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="" class="listitem-product listitem-product--agriculture">
+                            <div class="listitem-product__ecological">
+                                <img src="./img/orga1.png" alt="">
+                            </div>
+                            <div class="listitem-product__head">
+                                <div class="listitem-product__name">
+                                    <img src="./img/prd1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="listitem-product__body">
+                                <div class="listitem-product__addon">
+                                    KALISOP® FINE MAX 0.5 CL
+                                </div>
+                                <div class="listitem-product__copy">
+                                    KALISOP® FINE max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                    низьким вмістом хлориду
+                                </div>
+                                <div class="listitem-product__nutrients nutrients are-small">
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount"></div>
+                                        <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type">
+                                                K<sub>2</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount"></div>
+                                        <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type">
+                                                SO<sub>3</sub>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount"></div>
+                                        <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type">
+                                                M<sub>g</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nutrients__item">
+                                        <div class="nutrients__amount"></div>
+                                        <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                        <div class="nutrients__info-wrapper">
+                                            <div class="nutrients__type">
+                                                Na<sub>2</sub>O
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+</div>
+
+<footer class="footer" >
+    <div class="footer__wrapper">
+        <img class="footer__logo"
+             src="./img/ks_logo.svg" alt="Logo">
+        <div class="footer__content">
+            <div class="footer__body">
+                <nav class="footer__links">
+                    <div class="footer__title">Сільське господарство</div>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Добрива</a>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Кампанія</a>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Академія KALI</a>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Консультації</a>
+
+                </nav>
+                <nav class="footer__links">
+                    <div class="footer__title">Промисловість</div>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Харчування тварин</a>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Харчова сіль</a>
+
+
+                </nav>
+                <nav class="footer__links">
+                    <div class="footer__title">K+S Україна</div>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Про нас</a>
+                    <a class="footer__link" href=""><i class="icon icon-arrow-right"></i>Контакти</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="footer__footer">
+        <div class="container">
+            <div class="footer__meta">
+                <nav class="footer__links footer__links--horizontal">
+                    <span class="footer__link footer__link--dark">© 2025 K+S Україна. Всі права захищені.</span>
+                    <a class="footer__link footer__link--dark" href="">Захист даних</a>
+                    <div class="footer__link footer__link--dark"><a class="cmp_preferences">Параметри файлів cookie</a>
+                    </div>
+
+                </nav>
+            </div>
+
+            <div class="footer__social">
+                <nav class="footer__links footer__links--horizontal footer__links--right">
+                    <a class="follow-list__item follow-list__item--small" href="">
+                        <img class="follow-icon"
+                             src="./img/facebook.svg"
+                             alt="">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script class="main-script" src="./js/scripts.min.js"></script>
+</body>
+</html>

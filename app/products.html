@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <link
+            href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css">
+
+
+</head>
+<body class="body default">
+//= details/header.html
+<div class="page-wrapper">
+    <main class="page">
+
+
+        <section id="hero-page-section" class="page__section" data-section="hero">
+            <div id="hero" class="hero-wrapper">
+                <div class="hero">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="hero-slide has-gradient">
+                                    <picture class="hero-slide__picture">
+                                        <source media="(max-width: 991px)"
+                                                srcset="./img/prod2.png">
+                                        <source media="(min-width: 992px)"
+                                                srcset="./img/prod1.png">
+                                        <img src="./img/prod1.png"
+                                             alt="">
+                                    </picture>
+                                    <div class="hero-slide__inner">
+                                        <div class="hero-slide__body">
+
+                                            <div class="overline ">
+                                                Продукти
+                                            </div>
+                                            <h1 class="hero-slide__headline">Грунтові, позакореневі та <br> фертигаційні
+                                                добрива</h1>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-swiper-scrollbar class="swiper-scrollbar is-hidden"></div>
+                        <div class="hero__parallelogram">
+                            <div data-swiper-button="prev" class="hero-button hero-button-prev is-hidden"></div>
+                            <div data-swiper-button="next" class="hero-button hero-button-next is-hidden"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro-page-section" class="page__section page__section--intro" data-section="intro">
+            <nav aria-label="breadcrumb" class="breadcrumb">
+                <ol>
+
+                    <li class="breadcrumb__item">
+                        <a href="">K+S Україна</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <span>Продукти</span>
+
+                    </li>
+                </ol>
+            </nav>
+            <div id="intro" class="section-comp-wrapper">
+                <div class="intro  ">
+                    <div class="intro__container">
+                        <div class="intro__text">
+                            <p>Ми витягуємо поживні речовини для рослин із гірничодобувних робіт і переробляємо їх у
+                                ґрунтові, позакореневе добриво та добрива для фертигації. Завдяки своєму природному
+                                походженню багато наших добрив схвалені для використання в органічному землеробстві.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="overview-page-section" class="page__section" data-section="overview">
+            <div id="overview" class="section-comp-wrapper">
+                <div class="section-entry is-center-aligned is-bold">
+                    <h2 class="section-entry__headline"><strong>34 продукти</strong> для 3 видів застосування з 11
+                        поживними речовинами</h2>
+                </div>
+                <div class="products-body">
+                    <div class="products-sidebar">
+                        <div class="search-filter-item__toggle">
+                            <i class="search-filter-item__indicator icon icon-settings"></i>
+                            <span class="search-filter-item__title">Фільтр</span>
+                        </div>
+                        <div class="products-sidebar__body">
+                            <div class="products-sidebar__inner">
+                                <form action="">
+                                    <div class="products-sidebar__part is-active">
+                                        <div class="products-sidebar__head">
+                                            <h4>Культури</h4>
+                                            <i class="search-filter-item__indicator icon icon-arrow-down"></i>
+                                        </div>
+                                        <div class="products-sidebar__items">
+                                            <div class="products-sidebar__items-wrap">
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox" checked>
+                                                        <span>Овочі <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Зерно <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Верба <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Картопля <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox disabled">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Соняшник <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Ялинки <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Верба <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Картопля <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox disabled">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Соняшник <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products-sidebar__part">
+                                        <div class="products-sidebar__head">
+                                            <h4>Використання за призначенням</h4>
+                                            <i class="search-filter-item__indicator icon icon-arrow-down"></i>
+                                        </div>
+                                        <div class="products-sidebar__items">
+                                            <div class="products-sidebar__items-wrap">
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox" checked>
+                                                        <span>Овочі <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Зерно <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Верба <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Картопля <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox disabled">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Соняшник <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Ялинки <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products-sidebar__part">
+                                        <div class="products-sidebar__head">
+                                            <h4>Поживні речовини</h4>
+                                            <i class="search-filter-item__indicator icon icon-arrow-down"></i>
+                                        </div>
+                                        <div class="products-sidebar__items">
+                                            <div class="products-sidebar__items-wrap">
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox" checked>
+                                                        <span>Овочі <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Зерно <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Верба <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Картопля <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox disabled">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Соняшник <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+                                                <div class="products-sidebar__checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        <span>Ялинки <small>(6)</small></span>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products-sidebar__part">
+                                        <div class="products-sidebar__info">
+                                            <p>Ви також можете зручно завантажити наше порівняння продуктів у формі
+                                                таблиці.</p>
+                                            <a href="" class="button button--icon-left button--primary">
+                                                <i class="icon icon-pdf"></i>
+                                                <span>Завантажити PDF</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-list">
+                        <div data-colcount="2" class="listitems">
+                            <a href="" class="listitem-product listitem-product--agriculture">
+                                <div class="listitem-product__ecological">
+                                    <img src="./img/orga1.png" alt="">
+                                </div>
+                                <div class="listitem-product__head">
+                                    <div class="listitem-product__name">
+                                        <img src="./img/prd1.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="listitem-product__body">
+                                    <div class="listitem-product__addon">
+                                        KALISOP® FINE MAX 0.5 CL
+                                    </div>
+                                    <div class="listitem-product__copy">
+                                        KALISOP® FINE max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                        низьким вмістом хлориду
+                                    </div>
+                                    <div class="listitem-product__nutrients nutrients are-small">
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    K<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    SO<sub>3</sub>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    M<sub>g</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    Na<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="listitem-product listitem-product--agriculture">
+                                <div class="listitem-product__ecological">
+                                    <img src="./img/orga1.png" alt="">
+                                </div>
+                                <div class="listitem-product__head">
+                                    <div class="listitem-product__name">
+                                        <img src="./img/prd2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="listitem-product__body">
+                                    <div class="listitem-product__addon">
+                                        KALIMOP® fine
+                                    </div>
+                                    <div class="listitem-product__copy">
+                                        KALIMOP® fine max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                        низьким вмістом хлориду
+                                    </div>
+                                    <div class="listitem-product__nutrients nutrients are-small">
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    K<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    SO<sub>3</sub>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    M<sub>g</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    Na<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="" class="listitem-product listitem-product--agriculture">
+                                <div class="listitem-product__ecological">
+                                    <img src="./img/orga1.png" alt="">
+                                </div>
+                                <div class="listitem-product__head">
+                                    <div class="listitem-product__name">
+                                        <img src="./img/prd1.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="listitem-product__body">
+                                    <div class="listitem-product__addon">
+                                        KALISOP® FINE MAX 0.5 CL
+                                    </div>
+                                    <div class="listitem-product__copy">
+                                        KALISOP® FINE max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                        низьким вмістом хлориду
+                                    </div>
+                                    <div class="listitem-product__nutrients nutrients are-small">
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    K<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    SO<sub>3</sub>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    M<sub>g</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    Na<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="listitem-product listitem-product--agriculture">
+                                <div class="listitem-product__ecological">
+                                    <img src="./img/orga1.png" alt="">
+                                </div>
+                                <div class="listitem-product__head">
+                                    <div class="listitem-product__name">
+                                        <img src="./img/prd2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="listitem-product__body">
+                                    <div class="listitem-product__addon">
+                                        KALIMOP® fine
+                                    </div>
+                                    <div class="listitem-product__copy">
+                                        KALIMOP® fine max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                        низьким вмістом хлориду
+                                    </div>
+                                    <div class="listitem-product__nutrients nutrients are-small">
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    K<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    SO<sub>3</sub>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    M<sub>g</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    Na<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="" class="listitem-product listitem-product--agriculture">
+                                <div class="listitem-product__ecological">
+                                    <img src="./img/orga1.png" alt="">
+                                </div>
+                                <div class="listitem-product__head">
+                                    <div class="listitem-product__name">
+                                        <img src="./img/prd1.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="listitem-product__body">
+                                    <div class="listitem-product__addon">
+                                        KALISOP® FINE MAX 0.5 CL
+                                    </div>
+                                    <div class="listitem-product__copy">
+                                        KALISOP® FINE max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                        низьким вмістом хлориду
+                                    </div>
+                                    <div class="listitem-product__nutrients nutrients are-small">
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    K<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    SO<sub>3</sub>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    M<sub>g</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    Na<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="listitem-product listitem-product--agriculture">
+                                <div class="listitem-product__ecological">
+                                    <img src="./img/orga1.png" alt="">
+                                </div>
+                                <div class="listitem-product__head">
+                                    <div class="listitem-product__name">
+                                        <img src="./img/prd2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="listitem-product__body">
+                                    <div class="listitem-product__addon">
+                                        KALIMOP® fine
+                                    </div>
+                                    <div class="listitem-product__copy">
+                                        KALIMOP® fine max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                        низьким вмістом хлориду
+                                    </div>
+                                    <div class="listitem-product__nutrients nutrients are-small">
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    K<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    SO<sub>3</sub>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    M<sub>g</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    Na<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="" class="listitem-product listitem-product--agriculture">
+                                <div class="listitem-product__ecological">
+                                    <img src="./img/orga1.png" alt="">
+                                </div>
+                                <div class="listitem-product__head">
+                                    <div class="listitem-product__name">
+                                        <img src="./img/prd1.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="listitem-product__body">
+                                    <div class="listitem-product__addon">
+                                        KALISOP® FINE MAX 0.5 CL
+                                    </div>
+                                    <div class="listitem-product__copy">
+                                        KALISOP® FINE max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                        низьким вмістом хлориду
+                                    </div>
+                                    <div class="listitem-product__nutrients nutrients are-small">
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    K<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    SO<sub>3</sub>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    M<sub>g</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    Na<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="listitem-product listitem-product--agriculture">
+                                <div class="listitem-product__ecological">
+                                    <img src="./img/orga1.png" alt="">
+                                </div>
+                                <div class="listitem-product__head">
+                                    <div class="listitem-product__name">
+                                        <img src="./img/prd2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="listitem-product__body">
+                                    <div class="listitem-product__addon">
+                                        KALIMOP® fine
+                                    </div>
+                                    <div class="listitem-product__copy">
+                                        KALIMOP® fine max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                        низьким вмістом хлориду
+                                    </div>
+                                    <div class="listitem-product__nutrients nutrients are-small">
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    K<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    SO<sub>3</sub>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    M<sub>g</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    Na<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="" class="listitem-product listitem-product--agriculture">
+                                <div class="listitem-product__ecological">
+                                    <img src="./img/orga1.png" alt="">
+                                </div>
+                                <div class="listitem-product__head">
+                                    <div class="listitem-product__name">
+                                        <img src="./img/prd1.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="listitem-product__body">
+                                    <div class="listitem-product__addon">
+                                        KALISOP® FINE MAX 0.5 CL
+                                    </div>
+                                    <div class="listitem-product__copy">
+                                        KALISOP® FINE max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                        низьким вмістом хлориду
+                                    </div>
+                                    <div class="listitem-product__nutrients nutrients are-small">
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    K<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    SO<sub>3</sub>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    M<sub>g</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    Na<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="listitem-product listitem-product--agriculture">
+                                <div class="listitem-product__ecological">
+                                    <img src="./img/orga1.png" alt="">
+                                </div>
+                                <div class="listitem-product__head">
+                                    <div class="listitem-product__name">
+                                        <img src="./img/prd2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="listitem-product__body">
+                                    <div class="listitem-product__addon">
+                                        KALIMOP® fine
+                                    </div>
+                                    <div class="listitem-product__copy">
+                                        KALIMOP® fine max 0,5% Cl - це сульфат калію для подальшої обробки з особливо
+                                        низьким вмістом хлориду
+                                    </div>
+                                    <div class="listitem-product__nutrients nutrients are-small">
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #CD171A; width: 70%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    K<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #D8C80E; width: 62%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    SO<sub>3</sub>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #056369; width: 11%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    M<sub>g</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nutrients__item">
+                                            <div class="nutrients__amount"></div>
+                                            <div class="nutrients__graph" style="--col: #f9b122; width: 8%"></div>
+                                            <div class="nutrients__info-wrapper">
+                                                <div class="nutrients__type">
+                                                    Na<sub>2</sub>O
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="products-list__pagin">
+                            <ul class="page-number">
+                                <li>
+                                    <a href="" class="prev"></a>
+                                </li>
+                                <li>
+                                    <span class="current">1</span>
+                                </li>
+                                <li>
+                                    <a href="">2</a>
+                                </li>
+                                <li><a href="">3</a></li>
+                                <li><a href="" class="next"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-entry is-center-aligned">
+                    <div class="overline">Технічні характеристики продукції</div>
+                    <h2 class="section-entry__headline">Ви шукаєте технічні паспорти, паспорти безпеки чи деклараційні
+                        паспорти?</h2>
+                    <div class="section-entry__lead">
+                        <p>Ви знайдете відповідну інформацію на відповідних сторінках продуктів. Виберіть продукт у
+                            списку фільтрів вище. Якщо відповідного продукту немає в списку, будь ласка, зв’яжіться з
+                            нами електронною поштою, щоб отримати паспорт продукту, який ви шукаєте.</p>
+                        <a href="" class="button button--primary">
+                            <i class="icon icon-arrow-right"></i>
+                            <span class="button__label">Напишіть нам</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__toggle">
+                            <div class="accordion__indicator"></div>
+                            <span class="accordion__title">Технічний паспорт</span>
+                        </div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <p>Наші паспорти безпеки відповідають Європейському регламенту. Ми надаємо ці документи
+                                    кількома мовами, щоб запезпечити безпечне поводження з нашими K+S добривами. Будь
+                                    ласка, запитуйте їх безпосередньо у вашої контактної особи.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__toggle">
+                            <div class="accordion__indicator"></div>
+                            <span class="accordion__title">Паспорти безпеки</span>
+                        </div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <p>Наші паспорти безпеки відповідають Європейському регламенту. Ми надаємо ці документи
+                                    кількома мовами, щоб запезпечити безпечне поводження з нашими K+S добривами. Будь
+                                    ласка, запитуйте їх безпосередньо у вашої контактної особи.</p>
+                                <p>Наші паспорти безпеки відповідають Європейському регламенту. Ми надаємо ці документи
+                                    кількома мовами, щоб запезпечити безпечне поводження з нашими K+S добривами. Будь
+                                    ласка, запитуйте їх безпосередньо у вашої контактної особи.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__toggle">
+                            <div class="accordion__indicator"></div>
+                            <span class="accordion__title">Листи декларацій, етикетки коробок, товаросупровідні документи та етикетки великих мішків</span>
+                        </div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <p>Наші паспорти безпеки відповідають Європейському регламенту. Ми надаємо ці документи
+                                    кількома мовами, щоб запезпечити безпечне поводження з нашими K+S добривами. Будь
+                                    ласка, запитуйте їх безпосередньо у вашої контактної особи.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-teaser has-horizontal-offset" data-colcount="1">
+                    <div class="content-teaser__items">
+                        <a href=""
+                           class="text-image-tile has-right-aligned-image">
+
+                            <div class="text-image-tile__image-wrapper">
+                                <picture class="text-image-tile__image">
+                                    <source media="(max-width: 991px)"
+                                            data-srcset="./img/pdb2.jpg">
+                                    <source media="(min-width: 992px)"
+                                            data-srcset="./img/pdb1.jpg">
+                                    <img data-src="./img/pdb1.jpg"
+                                         src="./img/pdb1.jpg"
+                                         class="blur-up lazyload" alt="">
+                                </picture>
+                            </div>
+                            <div class="text-image-tile__content-wrapper">
+                                <div class="text-image-tile__content">
+                                    <h2 class="text-image-tile__headline">
+                                        Харчування тварин</h2>
+                                    <div class="text-image-tile__body">
+                                        Достатня кількість мінеральних речовин є вирішальним фактором для здоров'я
+                                        домашніх тварин і худоби. З нашою продукцією ви не тільки отримуєте чудову
+                                        якість, але й можете бути впевнені, що продукція в усіх аспектах відповідає
+                                        правовим нормам ЄС і сертифікована відповідно до відомих систем забезпечення
+                                        якості.
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <div class="button button--primary">
+                                            <i class="icon icon-arrow-right"></i>
+                                            <span class="button__label">Докладніше</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a></div>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+    </main>
+</div>
+
+//= details/footer.html
+//= details/scripts.html
+</body>
+</html>

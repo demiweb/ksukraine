@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <link
+            href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css">
+
+
+</head>
+<body class="body default">
+//= details/header.html
+<div class="page-wrapper">
+    <main class="page">
+
+
+        <section id="hero-page-section" class="page__section" data-section="hero">
+            <div id="hero" class="hero-wrapper">
+                <div class="hero">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="hero-slide has-gradient">
+                                    <picture class="hero-slide__picture">
+                                        <source media="(max-width: 991px)"
+                                                srcset="./img/cont2.jpg">
+                                        <source media="(min-width: 992px)"
+                                                srcset="./img/cont1.jpg">
+                                        <img src="./img/cont1.jpg"
+                                             alt="">
+                                    </picture>
+                                    <div class="hero-slide__inner">
+                                        <div class="hero-slide__body">
+
+                                            <div class="overline ">
+                                                Контакт
+                                            </div>
+                                            <h1 class="hero-slide__headline">К+С Україна</h1>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-swiper-scrollbar class="swiper-scrollbar is-hidden"></div>
+                        <div class="hero__parallelogram">
+                            <div data-swiper-button="prev" class="hero-button hero-button-prev is-hidden"></div>
+                            <div data-swiper-button="next" class="hero-button hero-button-next is-hidden"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro-page-section" class="page__section page__section--intro" data-section="intro">
+            <nav aria-label="breadcrumb" class="breadcrumb">
+                <ol>
+
+                    <li class="breadcrumb__item">
+                        <a href="">K+S Україна</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <span>Сільське господарство</span>
+
+                    </li>
+                </ol>
+            </nav>
+            <div id="intro" class="section-comp-wrapper">
+                <div class="intro  ">
+                    <div class="intro__container">
+
+                        <div class="intro__text">
+                            <p>Наша компанія є польським торговим партнером K+S Group з продажу товарів і послуг у
+                                сферах діяльності: K+S Minerals and Agriculture GmbH.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="overview-page-section" class="page__section" data-section="overview">
+            <div id="overview" class="section-comp-wrapper">
+                <div class="section-entry ">
+                    <h2 class="section-entry__headline">Розташування</h2>
+                </div>
+
+                <div class="map-container">
+                    <div id="map" class="mapped-block">
+                    </div>
+                    <div class="location-item is-active">
+                        <div class="location-item__inner">
+                            <div class="location-item__pin"></div>
+                            <div class="location-item__content">
+                                <div class="location-item__head">
+                                    <span>K + S Polska</span>
+                                    <div class="location-numbers">
+                                        <div class="location-number">
+                                            <i class="icon icon-factory"></i>
+                                            <span>Розподіл</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="location-item__body">
+                                    <div class="location-data">
+                                        <small class="location-data__label">Адреса</small>
+                                        <div class="location-data__data">
+                                            <div class="location-data__item">вулиця 28 червня 1956 р. № 404</div>
+                                            <div class="location-data__item">61-441 Познань</div>
+                                            <div class="location-data__item">Польща</div>
+                                        </div>
+                                        <div class="location-data__actions">
+                                            <a href="" class="button button--primary-light">
+                                                <i class="icon icon-compass-arrow"></i>
+                                                <span class="button__label">Автомобільний маршрут</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="location-data">
+                                        <small class="location-data__label">Контакти</small>
+                                        <div class="location-data__data">
+                                            <div class="location-data__item">
+                                                <i class="icon icon-phone"></i>
+                                                <a href="">+48 61 628 0951</a>
+                                            </div>
+                                            <div class="location-data__item">
+                                                <i class="icon icon-phone-landline"></i>
+                                                <span>+48 61 628 0954</span>
+                                            </div>
+                                            <div class="location-data__item">
+                                                <i class="icon icon-www"></i>
+                                                <a href="">https://www.ks-polska.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    mapboxgl.accessToken = 'pk.eyJ1IjoianVrYWNodSIsImEiOiJja25oZGticjkyazFjMnhtcjR5aDh0ZzFkIn0.WKYliOAefBFrYoPiTPzgaA';
+                    const geojson = {
+                        type: 'FeatureCollection',
+                        features: [
+                            {
+                                type: 'Feature',
+                                geometry: {
+                                    type: 'Point',
+                                    coordinates: [16.90418712883646, 52.36039991255058]
+                                },
+                                properties: {
+                                    title: 'Mapbox',
+                                    description: ''
+                                }
+                            }
+                        ]
+                    };
+
+                    const map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/mapbox/light-v11',
+                        center: [16.90418712883646, 52.36039991255058],
+                        zoom: 13
+                    });
+
+                    // add markers to map
+                    for (const feature of geojson.features) {
+
+                        const elmark = document.createElement('div');
+                        elmark.className = 'marker-1';
+
+                        // make a marker for each feature and add to the map
+                        new mapboxgl.Marker(elmark).setLngLat(feature.geometry.coordinates).addTo(map);  // Replace this line with code from step 5-2
+
+                        //code from step 6 will go here
+                    }
+
+                </script>
+
+                <div class="section-entry is-center-aligned">
+                    <div class="overline">Контакт</div>
+                    <h2 class="section-entry__headline">Ми раді вашим запитам щодо сільського господарства</h2>
+
+                </div>
+
+                <div class="contact-list  is-center-aligned">
+                    <div class="contact">
+                        <div class="contact__img-wrapper">
+                            <div class="contact__placeholder">
+                                <i class="icon icon-single-woman"></i>
+                            </div>
+                            <a href="" class="contact__mail-button button button--primary-light">
+                                <i class="icon icon-mail"></i>
+                                <span>Електронна пошта</span>
+                            </a>
+                        </div>
+                        <div class="contact__head">
+                            <div class="contact__name">Люцина Левицька</div>
+                            <div class="contact__position">Менеджер з маркетингу</div>
+                        </div>
+                        <div class="contact__body">
+                            <div class="contact__links">
+                                <div class="contact__links-wrapper">
+                                    <div class="contact__company">
+                                        <span>Регіональний радник</span>
+                                        <span>K+S Polska sp.</span>
+                                    </div>
+                                    <a href="" class="button button--icon-left contact__data">
+                                        <i class="icon icon-phone"></i>
+                                        <span class="button__label">+48 724 880 001</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="button button--icon-left contact__expand-button" data-hide="Менше"
+                                    data-show="Більше">
+                                <i class="icon icon-add"></i>
+                                <span class="button__label">Більше</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__img-wrapper">
+                            <div class="contact__placeholder">
+                                <img src="./img/conta1.jpg" data-src="./img/conta1.jpg" alt=""
+                                     class="contact__img blur-up lazyload">
+                            </div>
+
+                            <a href="" class="contact__mail-button button button--primary-light">
+                                <i class="icon icon-mail"></i>
+                                <span>Електронна пошта</span>
+                            </a>
+                        </div>
+                        <div class="contact__head">
+                            <div class="contact__name">Люцина Левицька</div>
+                            <div class="contact__position">Менеджер з маркетингу</div>
+                        </div>
+                        <div class="contact__body">
+                            <div class="contact__links">
+                                <div class="contact__links-wrapper">
+                                    <div class="contact__company">
+                                        <span>Регіональний радник</span>
+                                        <span>K+S Polska sp.</span>
+                                    </div>
+                                    <a href="" class="button button--icon-left contact__data">
+                                        <i class="icon icon-phone"></i>
+                                        <span class="button__label">+48 724 880 001</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="button button--icon-left contact__expand-button" data-hide="Менше"
+                                    data-show="Більше">
+                                <i class="icon icon-add"></i>
+                                <span class="button__label">Більше</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__img-wrapper">
+                            <div class="contact__placeholder">
+                                <i class="icon icon-single-woman"></i>
+                            </div>
+                            <a href="" class="contact__mail-button button button--primary-light">
+                                <i class="icon icon-mail"></i>
+                                <span>Електронна пошта</span>
+                            </a>
+                        </div>
+                        <div class="contact__head">
+                            <div class="contact__name">Люцина Левицька</div>
+                            <div class="contact__position">Менеджер з маркетингу</div>
+                        </div>
+                        <div class="contact__body">
+                            <div class="contact__links">
+                                <div class="contact__links-wrapper">
+                                    <div class="contact__company">
+                                        <span>Регіональний радник</span>
+                                        <span>K+S Polska sp.</span>
+                                    </div>
+                                    <a href="" class="button button--icon-left contact__data">
+                                        <i class="icon icon-phone"></i>
+                                        <span class="button__label">+48 724 880 001</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="button button--icon-left contact__expand-button" data-hide="Менше"
+                                    data-show="Більше">
+                                <i class="icon icon-add"></i>
+                                <span class="button__label">Більше</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+</div>
+
+//= details/footer.html
+//= details/scripts.html
+</body>
+</html>
